@@ -1,0 +1,155 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2</title>
+    <style>
+        .space_1 th {
+            padding-left: 100px;
+            padding-right: 50px;
+            text-align: start;
+        }
+
+        .subjects td {}
+
+        .checkbox {
+            padding-left: 100px;
+        }
+
+        .space {
+            width: 300px;
+        }
+
+        .space_1 {
+            width: 1500px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1 align="center">FORMULARIO DE INSCRIPCION</h1>
+    </nav>
+    <main>
+        <h2 align="center">CESDE--COMFAMA</h2>
+            <fieldset class="space_1">
+                <legend>DATOS DEL ESTUDIANTE</legend>
+                <table>
+                    <tr>
+                        <th>Identificacion *</th>
+                        <td><input type="text" placeholder="Obligatorio"></td>
+                        <th>Fecha de Nacimiento *</th>
+                        <td><input type="date"></td>
+                        <td rowspan="5" class="checkbox">
+                            <fieldset class="space">
+                                <legend>Tiempo Libre</legend>
+                                <input type="checkbox">Estudio <br>
+                                <input type="checkbox">Deporte <br>
+                                <input type="checkbox"> Redes Sociales <br>
+                                <input type="checkbox"> Musica <br>
+                                <input type="checkbox"> Video Juegos <br>
+                            </fieldset>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Apellidos *</th>
+                        <td><input type="text" placeholder="Apellidos" name="Apellidos" id="Apellidos"></td>
+                        <th>Edad *</th>
+                        <td><input type="number" min="1" max="67" placeholder="Edad" name="edad" id="edad"></td>
+                    </tr>
+                    <tr>
+                        <th>Nombres *</th>
+                        <td><input type="text" placeholder="Nombres" name="Nombres" id="Nombres"></td>
+                        <th>Mes Nacimiento</th>
+                        <td><input type="month" name="mes" id="mes"></td>
+                    </tr>
+                    <tr>
+                        <th>Correo *</th>
+                        <td><input type="email" placeholder="correo electronico" name="correo" id="correo"></td>
+                        <th>Genero</th>
+                        <td><input type="radio" name="Genero" id="Genero">Maculino <input type="radio" name="Genero" id="Genero">Femenino</td>
+                    </tr>
+                    <tr>
+                        <th>Celular</th>
+                        <td><input type="tel" placeholder="###-####-##-##" name="celular" id="celular"></td>
+                        <th>Comuna (*Barrios*)</th>
+                        <td><select name="barrios" id="barrios"><option value=""> Elija una opcion</option></select></td>
+                    </tr>
+                </table>
+            </fieldset>     <br><br>
+
+        <h2 align="center">***SELECCIONAR LAS MATERIAS DEL SEMESTRE***</h2>
+           <table style="margin: 0 auto;" class="subjects">
+           <tr>
+            <th>MATERIAS</th>
+            <th>Nro<br>Creditos</th>
+            <th>Vlr 1 credito</th>
+            <th>Subtotal</th>
+            <th>Horario</th>
+        </tr>
+        <tr>
+            <td><select name="Opcion" id="Opcion" style="width: 160px;"><option value="">Elije una Opcion</option></td>
+            <td><input type="number" min="0" max="10"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="submit" value="Calcular"></td>
+            <td><select name="Opcion" id="Opcion" style="width: 160px;"><option value="">Elije una Opcion</option></td>
+        </tr>
+        <tr>
+            <td><select name="Opcion" id="Opcion" style="width: 160px;"><option value="">Elije una Opcion</option></td>
+            <td><input type="number" min="0" max="10"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><select name="Opcion" id="Opcion" style="width: 160px;"><option value="">Elije una Opcion</option></td>
+        </tr>
+
+    </tr>
+    <tr>
+        <td><select name="Opcion" id="Opcion" style="width: 160px;"><option value="">Elije una Opcion</option></td>
+        <td><input type="number" min="0" max="10"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><select name="Opcion" id="Opcion" style="width: 160px;"><option value="">Elije una Opcion</option></td>
+    </tr>
+    <tr>
+        <td><select name="Opcion" id="Opcion" style="width: 160px;"><option value="">Elije una Opcion</option></td>
+        <td><input type="number" min="0" max="10"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><select name="Opcion" id="Opcion" style="width: 160px;"><option value="">Elije una Opcion</option></td>
+    </tr>
+    </tr>
+    <tr>
+        <td><select name="Opcion" id="Opcion" style="width: 160px;"><option value="">Elije una Opcion</option></td>
+        <td><input type="number" min="0" max="10"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><select name="Opcion" id="Opcion" style="width: 160px;"><option value="">Elije una Opcion</option></td>
+    </tr>
+
+<tr>
+    <th> ...... </th>
+    <th>Nro<br>Creditos</th>
+    <th> ...... </th>
+    <th>Total</th>
+</tr>
+<tr>
+    <th></th>
+    <th><input type="number" min="0" max="10"></th>
+    <th><input type="text"></th>
+    <td><input type="submit" value="Calcular"></td>
+</tr>
+</table> <br><br><br>
+<input type="button" value="Enviar">
+
+    </main>
+    <footer>
+        <hr><hr>
+        <h1>Desarollador Luis Mejia</h1>
+        <p>Programa Desarrollo de Software</p>
+        <p>Introducción a la Programación</p>
+        <p>Cesde 2023</p>
+    </footer>
+</body>
+</html>
